@@ -28,8 +28,8 @@ source .venv/bin/activate   # on Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 jupyter notebook
 
-```bash
--- 
+```
+
 ## Example
 
 For example, if you choose these four favorites:

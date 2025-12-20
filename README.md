@@ -3,11 +3,11 @@
 This repository contains a small content-based movie recommender inspired by **Letterboxd**.  
 It currently has two main notebooks:
 
-- **`v1_kaggle_widget/kaggle_widget.ipynb`**  
+- **`v1_kaggle_widget.ipynb`**  
   A first version that uses only the public **TMDB 5000 Kaggle dataset**.  
   You choose four favorite movies, and it recommends a few similar titles using TF–IDF over genres, keywords, cast, director, and overview text.
 
-- **`v2_letterboxd_demo/letterboxd_demo.ipynb`**  
+- **`v2_letterboxd_demo.ipynb`**  
   A richer prototype that incorporates **real Letterboxd exports** (ratings + favorites), a tiny **friends graph**, and a more Letterboxd-like interactive UI with explanations.
 
 The rest of this README focuses on the Version 2 prototype, which is the more “Letterboxd-ish” system.

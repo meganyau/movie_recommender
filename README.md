@@ -110,7 +110,7 @@ user’s overall taste.
 To recommend movies for a given user:
 1. Compute cosine similarity between user vector and all movie vectors
 2. Drop any movies that user has already rated
-3. Optional friend boost: (if friend rated movie >4, add small boost; if friend has it in top 4, add large boost   
+3. Friend boost: (if friend rated movie >4, add small boost; if friend has it in top 4, add large boost) 
                            
 This is implimented in function recommend_for_user_with_explanations    
                            

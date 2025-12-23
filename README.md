@@ -16,6 +16,39 @@ The rest of this README focuses on the Version 2 prototype, which is the more �
 > The notebook expects these CSVs to exist locally if you want to fully reproduce the demo.
 
 ---
+## Interactive Demo
+
+**Figma clickthrough prototype**
+
+[Open the Letterboxd-style recommender demo](https://www.figma.com/proto/zzREH8VlCK6BB7SQTg2RIk/Untitled?node-id=0-1&t=vrTeZKGSARbtTb6t-1)
+
+This prototype shows how a recommendation widget could appear **inside the Letterboxd app** on the Watchlist tab:
+
+- surfaces one recommendation at a time,
+- explains *why* it was picked (shared director, genre, and friend activity),
+- lets you move **Back / Next**, mark **I’ve watched this**, or **Add to Watchlist**,
+- updates the copy depending on your action (e.g. “You’ve already watched this – rate it?”).
+
+The Figma screens are a direct translation of the `ipywidgets` prototype UI from that notebook.
+
+### Limitations of this prototype
+
+This is an exploratory, offline demo – **not** a production system. In particular:
+
+- **No official API integration)**  
+  All data access is via static CSVs:
+  - TMDB 5000 Kaggle dataset for movie metadata.
+  - Letterboxd CSV exports for ratings/favorites.
+  There is no live TMDB or Letterboxd API in this version.
+
+- **Catalog limited to TMDB 5000 (~pre-2015)**  
+  The TMDB 5000 dataset mostly covers films up to ~2015.  
+  When I map Letterboxd ratings into this catalog using `(title_norm, year)`, only about **half of the logged films** get a match. Anything outside that catalog is invisible to the recommender.
+
+- **Only 5 recommendations in demo**  
+
+
+---
 
 ## Data Sources
 

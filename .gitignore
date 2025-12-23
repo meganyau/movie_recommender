@@ -1,11 +1,10 @@
-# raw data exports from Letterboxd
+# raw data exports from Letterboxd 
 letterboxd-*/
 **/ratings.csv
 **/watchlist.csv
 **/diary.csv
 **/profile.csv
 **/lists/
-**/*.csv
 
 # notebook noise
 .ipynb_checkpoints/

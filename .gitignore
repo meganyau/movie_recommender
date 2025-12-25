@@ -11,3 +11,4 @@ letterboxd-*/
 *.pyc
 .DS_Store
 demo.ipynb
+.env
